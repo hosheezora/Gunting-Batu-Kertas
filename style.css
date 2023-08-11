@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Angkor&family=Borel&family=Jost:wght@300;400&family=Lilita+One&family=Merriweather:wght@300;700;900&family=Poppins:wght@200;300;400&family=Rubik:wght@400;500&family=Sen:wght@400;700&display=swap');
+
+:root {
+  --darkest : #202225;
+  --light : #FFFFFF;
+  --grey : #585858;
+  --orange: #FF4D00;
+  --blue : #3FA3CE;
+  --font : #5A5A5A;
+  --dark : #1B1B1B;
+  --pink : #FF02B8;
+  --green : #00FFA3;
+}
+
+*{
+  margin: 0;
+  /* border: 1px solid grey; */
+}
+
+body {
+  background-color: var(--darkest);
+
+}
+
+h1 {
+  font-family: 'Lilita One', cursive;
+  text-align: center;
+  font-size: 70px;
+  color: aliceblue;
+  font-weight: bold;
+  padding: 3rem ;
+}
+
+p{
+  color: grey;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+li img {
+  height: 84px;
+  border-radius: 50px;
+  transition: .1s;
+  margin: none;
+}
+
+.batu{
+  margin-left: 80px;
+}
+
+.gunting{
+  margin-left: 140px;
+}
+
+.kertas{
+  margin-left: 80px;
+}
+
+.object-comp{
+  width: 129px;
+  height: 129px;
+  margin-left: 70px;
+}
+
+.suit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.object-comp{
+  /* width: 500px; */
+  border: 3px solid var(--darkest);
+  border-radius : 50% ;
+
+}
+
+.container{
+  max-width: 800px;
+  min-width: 800px;
+  margin: 0 auto;;
+ 
+}
+
+.box-comp {
+  transition: .3s;
+  margin: 8px;
+  background-color: var(--green) ;
+  height: 411px;
+  width: 308px;
+  border-radius: 50px 6px 6px 50px;
+  display: flex;
+  align-items: center;
+}
+
+
+.info {
+  display: flex;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  align-items: center;
+  justify-content: center;
+  height: 54px;
+  width: 148px;
+  position: absolute;
+  background-color: var(--light);
+  border-radius: 30px ;
+  font-size: 20px;
+  border: 6px solid var(--darkest);
+}
+
+.object{
+  margin-right: 50px;
+  cursor: pointer;
+}
+
+.box-player {
+  margin: 8px;
+  background-color: var(--blue) ;
+  height: 411px;
+  width: 308px;
+  border-radius: 6px 50px 50px 6px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  
+}
+
+
+
+ul{
+  display: flex ;
+  flex-direction: column;
+  margin: none;
+}
+
+li{
+  list-style-type: none;
+  margin: none;
+  
+}
+
+li img:hover{
+  /* border: 2px solid var(--darkest); */
+  box-shadow: 0px 0px 0px 3px ;
+-webkit-box-shadow: 0px 0px 0px 3px var(--darkest);
+-moz-box-shadow: 0px 0px 0px 3px var(--darkest);
+}
+
+li img:active{
+  transform: scale(0.9);
+}
